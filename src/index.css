@@ -53,9 +53,16 @@ a {
 .nav-links {
   display: flex;
   gap: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.nav-links a {
+.nav-links a,
+.nav-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  height: 64px;
   color: var(--text-muted);
   font-weight: 500;
   transition: color 0.2s;
@@ -75,7 +82,6 @@ a {
   color: var(--text-muted);
   font-weight: 500;
   cursor: pointer;
-  padding: 0.2rem 0;
 }
 
 .nav-dropdown-trigger:hover {
